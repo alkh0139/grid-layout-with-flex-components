@@ -33,4 +33,58 @@ body {
 
 .icon {
   font-size: 4rem;
+  text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+.emoji:first-child {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 12px;
+    display: flex;
+
+}
+.emoji:nth-child(3)
+{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 12px;
+    flex-direction: column;
+}
+
+.emoji:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+
+.emoji:last-child {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px;
+ 
+}
+
+p {
+    margin-right: 0.8rem;
+    order: 1;
+    margin-left: 0;
+}
+
+.emojis .emoji {
+    border: 1px black solid;
+    display: flex;
+    border-radius: 0.8rem;
+    justify-content: space-between;
+}
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
